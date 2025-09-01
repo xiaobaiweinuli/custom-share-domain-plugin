@@ -15,7 +15,6 @@ COPY . .
 
 # 构建项目
 RUN npx vite build --mode production
-RUN npx blinko-cli release plugin
 
 # 使用更小的基础镜像用于运行时
 FROM node:18-alpine AS runtime
