@@ -15,6 +15,7 @@ COPY . .
 
 # 构建项目
 RUN npx vite build --mode production
+RUN npx blinko-cli release plugin
 
 # 使用更小的基础镜像用于运行时
 FROM node:18-alpine AS runtime
@@ -23,7 +24,7 @@ FROM node:18-alpine AS runtime
 WORKDIR /app
 
 # 从构建阶段复制构建结果
-COPY --from=builder /app/dist ./dist
+COPY --from=builder /app/release ./release
 COPY --from=builder /app/package.json ./
 COPY --from=builder /app/plugin.json ./
 
