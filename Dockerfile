@@ -7,14 +7,14 @@ WORKDIR /app
 # 复制package.json和package-lock.json
 COPY package*.json ./
 
-# 安装依赖
-RUN npm ci --only=production
+# 安装所有依赖（包括开发依赖，因为需要blinko-cli）
+RUN npm ci
 
 # 复制源代码
 COPY . .
 
 # 构建项目
-RUN npm run release:publish
+RUN npx vite build --mode production
 
 # 使用更小的基础镜像用于运行时
 FROM node:18-alpine AS runtime
@@ -37,4 +37,4 @@ EXPOSE 8080
 ENV NODE_ENV=production
 
 # 启动命令
-CMD ["npm"， "run", "dev"]
+CMD ["npm", "run", "dev"]
