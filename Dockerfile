@@ -1,5 +1,5 @@
-# 使用Node.js官方镜像作为基础镜像
-FROM node:18-alpine AS builder
+# 使用Node.js官方镜像作为基础镜像（使用非Alpine版本避免递归监视问题）
+FROM node:18-slim AS builder
 
 # 设置工作目录
 WORKDIR /app
@@ -16,8 +16,8 @@ COPY . .
 # 构建项目
 RUN npx vite build --mode production
 
-# 使用更小的基础镜像用于运行时
-FROM node:18-alpine AS runtime
+# 使用更小的基础镜像用于运行时（使用非Alpine版本避免递归监视问题）
+FROM node:18-slim AS runtime
 
 # 设置工作目录
 WORKDIR /app
