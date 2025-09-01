@@ -1,0 +1,19 @@
+{
+  "name": "custom-share-domain-plugin",
+  "author": "Manus",
+  "url": "https://github.com/xiaobaiweinuli/custom-share-domain-plugin",
+  "version": "1.0.0",
+  "minAppVersion": "0.0.0",
+  "displayName": {
+    "default": "Custom Share Domain",
+    "zh": "自定义分享域名"
+  },
+  "description": {
+    "default": "A Blinko plugin that allows users to customize share link domains with multi-domain management, domain selection, and default domain settings.",
+    "zh": "一个允许用户自定义分享链接域名的 Blinko 插件，支持多域名管理、域名选择和默认域名设置。"
+  },
+  "readme": {
+    "default": "README.md",
+    "zh": "README_zh.md"
+  }
+}

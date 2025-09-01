@@ -1,0 +1,52 @@
+{
+  "pluginName": "Custom Share Domain",
+  "pluginDescription": "Customize share link domains with multi-domain management",
+  "settings": {
+    "title": "Custom Share Domain Settings",
+    "description": "Manage your custom share domains and set default domain for automatic sharing",
+    "domainList": "Domain List",
+    "addDomain": "Add Domain",
+    "editDomain": "Edit Domain",
+    "addNewDomain": "Add New Domain",
+    "domainName": "Domain Name",
+    "domainUrl": "Domain URL",
+    "domainNamePlaceholder": "e.g., My Blog",
+    "domainUrlPlaceholder": "e.g., https://myblog.com",
+    "save": "Save",
+    "cancel": "Cancel",
+    "edit": "Edit",
+    "delete": "Delete",
+    "enable": "Enable",
+    "disable": "Disable",
+    "enabled": "Enabled",
+    "disabled": "Disabled",
+    "default": "Default",
+    "defaultDomainSettings": "Default Domain Settings",
+    "useOriginalLink": "Use Blinko Original Link",
+    "noDomains": "No custom domains",
+    "addDomainHint": "Click 'Add Domain' button to start adding",
+    "saving": "Saving...",
+    "saveSettings": "Save Settings"
+  },
+  "share": {
+    "selectDomain": "Select Share Domain",
+    "shareToCustomDomain": "Share to Custom Domain",
+    "noAvailableDomains": "No available share domains",
+    "addDomainsHint": "Please add custom domains in plugin settings",
+    "clickToCopy": "Click any option to copy share link to clipboard",
+    "linkCopied": "{{domainName}} share link copied",
+    "copyFailed": "Failed to copy link",
+    "cancelShare": "Cancel Share",
+    "cancelingShare": "Canceling...",
+    "shareCanceled": "Share canceled",
+    "cancelShareFailed": "Failed to cancel share"
+  },
+  "messages": {
+    "loadConfigFailed": "Failed to load configuration",
+    "saveConfigFailed": "Failed to save settings",
+    "settingsSaved": "Settings saved",
+    "showShareSelectorFailed": "Failed to show share selector",
+    "fillCompleteInfo": "Please fill in complete domain information",
+    "invalidUrl": "Please enter a valid URL"
+  }
+} 

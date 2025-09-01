@@ -1,0 +1,53 @@
+{
+  "pluginName": "自定义分享域名",
+  "pluginDescription": "自定义分享链接域名，支持多域名管理",
+  "settings": {
+    "title": "自定义分享域名设置",
+    "description": "管理您的自定义分享域名，设置默认域名用于自动分享",
+    "domainList": "域名列表",
+    "addDomain": "添加域名",
+    "editDomain": "编辑域名",
+    "addNewDomain": "添加新域名",
+    "domainName": "域名名称",
+    "domainUrl": "域名 URL",
+    "domainNamePlaceholder": "例如：我的博客",
+    "domainUrlPlaceholder": "例如：https://myblog.com",
+    "save": "保存",
+    "cancel": "取消",
+    "edit": "编辑",
+    "delete": "删除",
+    "enable": "启用",
+    "disable": "禁用",
+    "enabled": "已启用",
+    "disabled": "已禁用",
+    "default": "默认",
+    "defaultDomainSettings": "默认域名设置",
+    "useOriginalLink": "使用 Blinko 原始链接",
+    "noDomains": "暂无自定义域名",
+    "addDomainHint": "点击\"添加域名\"按钮开始添加",
+    "saving": "保存中...",
+    "saveSettings": "保存设置"
+  },
+  "share": {
+    "selectDomain": "选择分享域名",
+    "shareToCustomDomain": "分享到自定义域名",
+    "noAvailableDomains": "暂无可用的分享域名",
+    "addDomainsHint": "请在插件设置中添加自定义域名",
+    "clickToCopy": "点击任意选项复制分享链接到剪贴板",
+    "linkCopied": "已复制 {{domainName}} 分享链接",
+    "copyFailed": "复制链接失败",
+    "cancelShare": "取消分享",
+    "cancelingShare": "取消中...",
+    "shareCanceled": "分享已取消",
+    "cancelShareFailed": "取消分享失败"
+  },
+  "messages": {
+    "loadConfigFailed": "加载配置失败",
+    "saveConfigFailed": "保存设置失败",
+    "settingsSaved": "设置已保存",
+    "showShareSelectorFailed": "显示分享选择器失败",
+    "fillCompleteInfo": "请填写完整的域名信息",
+    "invalidUrl": "请输入有效的 URL"
+  }
+}
+

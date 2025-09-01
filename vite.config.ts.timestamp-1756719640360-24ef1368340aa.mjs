@@ -1,0 +1,14 @@
+// vite.config.ts
+import { defineConfig } from "file:///D:/15268/Desktop/custom-share-domain-plugin/node_modules/vite/dist/node/index.js";
+import preact from "file:///D:/15268/Desktop/custom-share-domain-plugin/node_modules/@preact/preset-vite/dist/esm/index.mjs";
+import blinkoPlugin from "file:///D:/15268/Desktop/custom-share-domain-plugin/node_modules/vite-plugin-blinko/dist/index.js";
+var vite_config_default = defineConfig(({ mode }) => ({
+  plugins: [
+    preact(),
+    ...blinkoPlugin()
+  ]
+}));
+export {
+  vite_config_default as default
+};
+//# sourceMappingURL=data:application/json;base64,ewogICJ2ZXJzaW9uIjogMywKICAic291cmNlcyI6IFsidml0ZS5jb25maWcudHMiXSwKICAic291cmNlc0NvbnRlbnQiOiBbImNvbnN0IF9fdml0ZV9pbmplY3RlZF9vcmlnaW5hbF9kaXJuYW1lID0gXCJEOlxcXFwxNTI2OFxcXFxEZXNrdG9wXFxcXGN1c3RvbS1zaGFyZS1kb21haW4tcGx1Z2luXCI7Y29uc3QgX192aXRlX2luamVjdGVkX29yaWdpbmFsX2ZpbGVuYW1lID0gXCJEOlxcXFwxNTI2OFxcXFxEZXNrdG9wXFxcXGN1c3RvbS1zaGFyZS1kb21haW4tcGx1Z2luXFxcXHZpdGUuY29uZmlnLnRzXCI7Y29uc3QgX192aXRlX2luamVjdGVkX29yaWdpbmFsX2ltcG9ydF9tZXRhX3VybCA9IFwiZmlsZTovLy9EOi8xNTI2OC9EZXNrdG9wL2N1c3RvbS1zaGFyZS1kb21haW4tcGx1Z2luL3ZpdGUuY29uZmlnLnRzXCI7aW1wb3J0IHsgZGVmaW5lQ29uZmlnIH0gZnJvbSBcInZpdGVcIjtcbmltcG9ydCBwcmVhY3QgZnJvbSBcIkBwcmVhY3QvcHJlc2V0LXZpdGVcIjtcbmltcG9ydCBibGlua29QbHVnaW4gZnJvbSBcInZpdGUtcGx1Z2luLWJsaW5rb1wiO1xuXG4vKipcbiAqIFZpdGUgY29uZmlndXJhdGlvbiBmb3IgQmxpbmtvIHBsdWdpblxuICovXG5leHBvcnQgZGVmYXVsdCBkZWZpbmVDb25maWcoKHsgbW9kZSB9KSA9PiAoe1xuICBwbHVnaW5zOiBbXG4gICAgcHJlYWN0KCksXG4gICAgLi4uYmxpbmtvUGx1Z2luKClcbiAgXVxufSkpOyJdLAogICJtYXBwaW5ncyI6ICI7QUFBMlQsU0FBUyxvQkFBb0I7QUFDeFYsT0FBTyxZQUFZO0FBQ25CLE9BQU8sa0JBQWtCO0FBS3pCLElBQU8sc0JBQVEsYUFBYSxDQUFDLEVBQUUsS0FBSyxPQUFPO0FBQUEsRUFDekMsU0FBUztBQUFBLElBQ1AsT0FBTztBQUFBLElBQ1AsR0FBRyxhQUFhO0FBQUEsRUFDbEI7QUFDRixFQUFFOyIsCiAgIm5hbWVzIjogW10KfQo=
