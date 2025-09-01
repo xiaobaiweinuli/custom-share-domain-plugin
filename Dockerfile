@@ -27,8 +27,8 @@ COPY --from=builder /app/release ./release
 COPY --from=builder /app/package.json ./
 COPY --from=builder /app/plugin.json ./
 
-# 安装生产依赖
-RUN npm ci --only=production
+# 安装所有依赖（运行时也需要blinko-cli来运行dev命令）
+RUN npm ci
 
 # 暴露端口（如果需要）
 EXPOSE 8080
