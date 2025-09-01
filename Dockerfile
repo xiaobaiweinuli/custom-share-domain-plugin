@@ -25,6 +25,9 @@ FROM node:18-alpine AS runtime
 # 设置工作目录
 WORKDIR /app
 
+# 安装必要的系统工具（解决文件监视问题）
+RUN apk add --no-cache inotify-tools
+
 # 从构建阶段复制构建结果
 COPY --from=builder /app/release ./release
 COPY --from=builder /app/package.json ./
