@@ -25,6 +25,7 @@ WORKDIR /app
 # 从构建阶段复制构建结果
 COPY --from=builder /app/release ./release
 COPY --from=builder /app/package.json ./
+COPY --from=builder /app/package-lock.json ./
 COPY --from=builder /app/plugin.json ./
 
 # 安装所有依赖（运行时也需要blinko-cli来运行dev命令）
