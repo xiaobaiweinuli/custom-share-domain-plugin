@@ -28,14 +28,12 @@ WORKDIR /app
 # 安装必要的系统工具（解决文件监视问题）
 RUN apk add --no-cache inotify-tools
 
-# 从构建阶段复制构建结果
+# 从构建阶段复制构建结果和node_modules
 COPY --from=builder /app/release ./release
 COPY --from=builder /app/package.json ./
 COPY --from=builder /app/package-lock.json ./
 COPY --from=builder /app/plugin.json ./
-
-# 安装生产依赖
-RUN npm ci --only=production
+COPY --from=builder /app/node_modules ./node_modules
 
 # 暴露端口（如果需要）
 EXPOSE 8080
