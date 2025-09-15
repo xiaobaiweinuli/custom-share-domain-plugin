@@ -48,7 +48,7 @@ System.register([], (exports) => ({
           window.Blinko.addRightClickMenu({
             name: 'custom-share-domain',
             label: getI18nText('share.shareToCustomDomain'),
-            icon: 'share',  
+            icon: 'tabler:share', 
             onClick: async (note) => {
               await this.showShareSelector(note);
             }
