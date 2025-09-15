@@ -19,10 +19,17 @@ A powerful Blinko plugin that allows users to customize share link domains with 
 
 ## 🚀 Installation
 
+### Standard Installation
+
 1. Download the plugin package from releases
 2. Upload the plugin in your Blinko admin interface
 3. Enable the plugin and configure your domains
 4. Start sharing with custom domains!
+
+### API Direct Installation (No Review Needed)
+
+For advanced users or automated deployment scenarios, you can use the direct API installation method to bypass the review process. Please refer to the [API Documentation](API.md) for detailed instructions on how to use the API for plugin installation.
+
 
 ## 📖 Usage Guide
 
