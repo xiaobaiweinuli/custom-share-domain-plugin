@@ -7,7 +7,22 @@ on:
   workflow_dispatch:
 
 jobs:
+  package-info:
+    runs-on: ubuntu-latest
+    outputs:
+      version: ${{ steps.package-version.outputs.version }}
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      - name: Extract version
+        id: package-version
+        uses: actions/github-script@v6
+        with:
+          script: |
+            const packageJson = require('./package.json');
+            core.setOutput('version', packageJson.version);
   build-and-release:
+    needs: package-info
     runs-on: ubuntu-latest
     permissions:
       contents: write
@@ -35,8 +50,8 @@ jobs:
       - name: Create GitHub Release
         uses: softprops/action-gh-release@v2
         with:
-          tag_name: v${{ github.run_number }}
-          name: Plugin Release v${{ github.run_number }}
+          tag_name: v${{ needs.package-info.outputs.version }}
+          name: Plugin Release v${{ needs.package-info.outputs.version }}
           draft: false
           prerelease: false
           files: |
